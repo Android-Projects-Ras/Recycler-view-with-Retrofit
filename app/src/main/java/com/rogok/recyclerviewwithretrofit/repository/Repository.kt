@@ -12,15 +12,9 @@ class Repository {
         return RetrofitInstance.api.getPost()
     }
 
-    suspend fun getUsers(): Response<List<User>> {
-        return RetrofitInstance.api.getUsers()
-    }
-
     suspend fun getUser(): User {
         return RetrofitInstance.api.getUser()
     }
 
-    suspend fun getData(): Data {
-        return RetrofitInstance.api.getData()
-    }
+
 }

@@ -12,11 +12,5 @@ interface SimpleApi {
     suspend fun getPost(): Post
 
     @GET("api/users?page=2")
-    suspend fun getUsers(): Response<List<User>>
-
-    @GET("api/users?page=2")
     suspend fun getUser(): User
-
-    @GET("api/users?page=2")
-    suspend fun getData(): Data
 }
